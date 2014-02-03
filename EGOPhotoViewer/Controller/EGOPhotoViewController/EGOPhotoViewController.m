@@ -94,6 +94,9 @@
 	self.view.backgroundColor = [UIColor blackColor];
 	self.wantsFullScreenLayout = YES;
 	
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+
 	if (!_scrollView) {
 		
 		_scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
