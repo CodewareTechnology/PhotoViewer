@@ -18,9 +18,10 @@ Pod::Spec.new do |s|
   }
 
   s.authors      = { "Joe Hewitt" => "joe@joehewitt.com" }
-  #s.source       = { :git => "https://github.com/enormego/PhotoViewer.git", :commit => "54f84c971bd9a8188f8913f48dc3cab26ae61d39" }
+  s.source       = { :git => "https://github.com/mikeleo/PhotoViewer.git", :commit => "5e668e3163a31b35623b3f3a6ab2b94b52b323a1" }
   s.platform     = :ios
   s.source_files = 'EGOPhotoViewer/**/*.{h,m}'
+  s.requires_arc = false
 
   s.resources = "EGOPhotoViewer/Resources/*.png"
   s.dependency 'EGOImageLoading', '~> 0.0.1'
